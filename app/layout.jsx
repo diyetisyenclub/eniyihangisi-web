@@ -1,13 +1,24 @@
 export const metadata = {
-  title: 'www.eniyihangisi.com',
+  title: 'eniyihangisi.com',
   description: 'Türkiye’nin En İyi Takviye Rehberi',
 };
 
-// Sadece canlı site dışındaki (Sandbox/Önizleme) ortamlarda çalışan konsol koruması.
-// Google botları eniyihangisi.com adresini tararken bu kod blogu tamamen devre dışı kalır.
+// Sunucu dışı (tarayıcı) ortamında çalıştırılacak kontroller
 if (typeof window !== 'undefined') {
-  const isLiveSite = window.location.hostname.includes('eniyihangisi.com');
+  const hostname = window.location.hostname;
+  const isLiveSite = hostname.includes('eniyihangisi.com');
   
+  // Canlı sitede 'www.' kullanımı zorunlu kılınır (SEO Standardizasyonu)
+  if (isLiveSite && !hostname.startsWith('www.')) {
+    window.location.replace(
+      'https://www.eniyihangisi.com' + 
+      window.location.pathname + 
+      window.location.search + 
+      window.location.hash
+    );
+  }
+
+  // Sadece canlı site dışındaki (Sandbox/Önizleme) ortamlarda çalışan konsol koruması.
   if (!isLiveSite) {
     const originalConsoleError = console.error;
     console.error = function (...args) {
