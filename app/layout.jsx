@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'eniyihangisi.com',
+  title: 'www.eniyihangisi.com',
   description: 'Türkiye’nin En İyi Takviye Rehberi',
 };
 
