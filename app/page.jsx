@@ -60,7 +60,7 @@ export default function App() {
       price: "₺480",
       costPerServing: "8.0 TL",
       ingredients: "95 mg Bisglisinat + 45 mg Sitrat. İlave: Aktif B6 Vitamini (P5P).",
-      dosage: "Günde 1-2 Kapsül (Tok Karnına)",
+      dosage: "Günde 1 Kapsül (Tok Karnına)",
       benefits: [
         "Uykuya dalış süresini kısaltır ve derin uyku sağlar",
         "Sinir sistemini yatıştırarak stresi azaltır"
