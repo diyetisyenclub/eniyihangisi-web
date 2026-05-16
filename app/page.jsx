@@ -53,7 +53,7 @@ export default function App() {
       name: "Magnezyum Bisglisinat & Sitrat",
       form: "Bisglisinat, Sitrat",
       rating: 4.5,
-      ratingText: "%90 Memnuniyet",
+      ratingText: "%95 Memnuniyet",
       tags: ["Uyku & Stres", "Sindirim"],
       scores: { overall: 9.2, absorption: "İyi" },
       servings: "60 Kapsül",
